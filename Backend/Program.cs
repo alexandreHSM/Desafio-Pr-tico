@@ -18,13 +18,13 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     }); 
 
-builder.Services.AddCors(options =>
+builder.Services.AddCors(options => // permitir que ele se comunique com o front, que está em uma porta diferente
 {
     options.AddPolicy("PermitirReact", policy =>
     {
-        policy.WithOrigins("http://localhost:5173", "http://localhost:3000") // ajuste pra porta que seu React vai usar
-              .AllowAnyHeader()   // permite qualquer header (ex: Content-Type: application/json)
-              .AllowAnyMethod();  // permite GET, POST, DELETE, etc.
+        policy.WithOrigins("http://localhost:5173", "http://localhost:3000") // ajuste pra porta que o React vai usar
+              .AllowAnyHeader()   // permite qualquer header
+              .AllowAnyMethod();  // permite GET, POST, DELETE
     });
 });
 
@@ -42,7 +42,7 @@ app.UseCors("PermitirReact");
 
 app.MapControllers();
 
-// Ela mapeia as rotas como /api/pessoas
+// mapeia as rotas como /api/pessoas
 app.MapControllers(); 
 
 // GARANTE A CRIAÇÃO AUTOMÁTICA DAS TABELAS NO INÍCIO
