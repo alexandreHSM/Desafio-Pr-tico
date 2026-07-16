@@ -36,7 +36,8 @@ O frontend sobe em `http://localhost:5173` e já está configurado para consumir
 ## Funcionalidades
 
 ### Pessoas
-- Criar, listar e deletar pessoas (identificador, nome, idade gerados/geridos automaticamente).
+- Criar, listar e deletar pessoas (identificador, nome, idade).
+- ver os gasto por pessoa.
 - Ao deletar uma pessoa, todas as transações associadas são deletadas em cascata.
 
 ### Transações
