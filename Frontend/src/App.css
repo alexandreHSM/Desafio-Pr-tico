@@ -13,8 +13,7 @@
 
 .sidebar {
   width: 220px;
-  background-color: #d9d9d9;
-  border-right: 3px solid #4a9eff; /* a linha azul separando sidebar do conteúdo */
+  background-color: #f0eded;
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
@@ -22,6 +21,7 @@
 }
 
 .sidebar-item {
+  margin-top: 25px;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -31,6 +31,11 @@
   border: none;
   text-align: left;
   font-family: inherit;
+  transition: .4s;
+}
+
+.sidebar-item:hover{
+  color: #0958cd;
 }
 
 .sidebar-item.active {

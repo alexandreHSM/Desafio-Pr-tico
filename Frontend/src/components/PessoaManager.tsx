@@ -102,6 +102,7 @@ export function PessoaManager() {
         <table>
           <thead>
             <tr>
+              <th>ID</th>
               <th>Nome</th>
               <th>Idade</th>
               <th style={{ textAlign: 'right' }}>Ações</th>
@@ -113,6 +114,7 @@ export function PessoaManager() {
             ) : (
               pessoas.map((pessoa) => (
                 <tr key={pessoa.pessoaId}>
+                  <td>{pessoa.pessoaId}</td>
                   <td>{pessoa.nome}</td>
                   <td>{pessoa.idade} anos</td>
                   <td className="acoes-cell">

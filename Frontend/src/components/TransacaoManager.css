@@ -1,7 +1,7 @@
 .form-row select {
   padding: 12px 16px;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: none;
   background: var(--sidebar-bg);
   font-size: 14px;
   font-weight: 600;
