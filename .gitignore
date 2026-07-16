@@ -1,0 +1,17 @@
+# .NET (Backend)
+Backend/bin/
+Backend/obj/
+Backend/*.db
+Backend/*.db-shm
+Backend/*.db-wal
+
+# Node (Frontend)
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.vite/
+
+# Editor / SO
+.vs/
+.vscode/
+*.user
+.DS_Store

@@ -1,0 +1,51 @@
+/* Reset básico pra evitar espaçamentos padrão do navegador atrapalharem o layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  border: 2px solid #1a1a1a; /* a borda preta que aparece ao redor de tudo no wireframe */
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #d9d9d9;
+  border-right: 3px solid #4a9eff; /* a linha azul separando sidebar do conteúdo */
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebar-item {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #1a1a1a;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: inherit;
+}
+
+.sidebar-item.active {
+  color: #2b7fff; /* destaca a aba ativa */
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
