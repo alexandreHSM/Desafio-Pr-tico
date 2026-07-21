@@ -40,8 +40,6 @@ app.UseHttpsRedirection();
 
 app.UseCors("PermitirReact");
 
-app.MapControllers();
-
 // mapeia as rotas como /api/pessoas
 app.MapControllers(); 
 
